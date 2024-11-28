@@ -1,74 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Design</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/lato.css">
+    <title>Exercici boostrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<!-- FONS: bg-light aplica un color clar i bg-gradient afegeix un efecte degradat -->
-<body class="bg-light bg-gradient">
-
-    <!-- CONTENIDOR: container centra els continguts i els fa responsius, my-5 afegeix marge vertical de 3rem, border afegeix un contorn, border-dark fa que sigui negre, p-5 afegeix padding dins del contorn -->
-    <div class="container my-5 border border-dark p-5">
-
-        <!-- FILA: row crea una fila amb 12 columnes disponibles -->
+<body>
+    <div class="container-fluid custom-container">
         <div class="row">
-
-            <!-- PRIMERA SECCIÓ: col-md-6 fa que aquesta columna ocupi 6 de les 12 parts disponibles en pantalles de 768px o més, d-flex aplica flexbox per alinear els elements, flex-column els organitza en una columna, justify-content-center els centra verticalment -->
-            <div class="col-md-6 d-flex flex-column justify-content-center">
-                <div class="row">
-                    <!-- TÍTOLS: fw-bold fa que el text sigui en negreta (bold) -->
-                    <h1 class="fw-bold">Design products</h1>
-                    <!-- MARGE ESQUERRA: ms-4 afegeix un marge a l'esquerra de 1.5rem -->
-                    <h2 class="fw-bold ms-4">Deliver experience</h2>
-                    <!-- TEXT: per defecte, el paràgraf s'estila amb Bootstrap -->
+            <div class="col-md-6">
+                <div class="col-md-12 title">
+                    <h1>Design products</h1>
+                    <h1 class="ms-5">Deliver experience</h1>
                 </div>
-
-                <div class="row border-start border-dark m-2 border-5">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
-                        Quam vel aliquam sit vulputate. Faucibus nec gravida ipsum pulvinar vel.
+                <div class="col-md-12 mt-5 ps-4 border-start border-dark border-5 title-description mb-5">
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate. Faucibus nec gravida ipsum pulvinar vel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
                     </p>
-    
-                    <!-- BOTÓ: btn crea un botó estilitzat, btn-dark el fa de color negre, btn-lg aplica una mida gran, m-2 afegeix marge al botó -->
-                    <button class="btn btn-dark w-auto m-2">Get started</button>
+                    <button class=" bg-dark text-white rounded-pill px-5 pb-2 pt-2 mt-2"> Get started </button>
                 </div>
             </div>
-
-            <!-- SEGONA SECCIÓ: col-md-6 ocupa 6 de les 12 parts disponibles, text-center centra tot el contingut dins de la columna -->
-            <div class="col-md-6 text-center">
-                <!-- IMATGE: img-fluid fa que la imatge sigui responsive (s'adapta al contenidor), product-image és una classe personalitzada -->
-                <img src="img/cámara-de-fotografía-digital.webp" alt="Product Image" class="img-fluid product-image">
+            <div class="col-md-6">
+                <img class="img-fluid mt-4 mb-5 p-2" src="img/camera.png" alt="Exercici boostrap"
+                    title="Polaroid camera">
             </div>
         </div>
-
-        <!-- SEGONA SECCIÓ: row crea una nova fila, mt-5 afegeix un marge superior de 3rem -->
-        <div class="row text-left mt-5">
-            <!-- PRIMER QUADRAT: col-md-3 ocupa 3 de les 12 parts disponibles, p-3 afegeix padding dins de la columna -->
-            <div class="col-md-3 p-3">
-                <h5>Title 1</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row mt-3 row-cards">
+            <div class="col-md-3 p-3 pt-5 pb-5 bg-white">
+                <h6>Title 1</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde totam iure illum, natus rem deserunt.
+                </p>
             </div>
-            <!-- SEGON QUADRAT: bg-primary aplica un fons blau, p-3 afegeix padding dins de la columna -->
-            <div class="col-md-3 bg-primary p-3">
-                <h5>Title 2</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="col-md-3 p-3 pt-5 pb-5 bg-exercici">
+                <h6>Title 2</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde totam iure illum, natus rem deserunt.
+                </p>
             </div>
-            <!-- TERCER QUADRAT: similar al primer quadrat -->
-            <div class="col-md-3 p-3">
-                <h5>Title 3</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="col-md-3 p-3 pt-5 pb-5 bg-white">
+                <h6>Title 3</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde totam iure illum, natus rem deserunt.
+                </p>
             </div>
-            <!-- QUART QUADRAT: bg-primary afegeix el mateix fons blau que al segon quadrat, p-3 afegeix padding -->
-            <div class="col-md-3 bg-primary p-3">
-                <h5>Title 4</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="col-md-3 p-3 pt-5 pb-5 bg-exercici">
+                <h6>Title 4</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde totam iure illum, natus rem deserunt.
+                </p>
             </div>
         </div>
-
     </div>
 </body>
+
 </html>
